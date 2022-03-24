@@ -1,9 +1,11 @@
 .heading2Xl {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   line-height: 1.2;
   font-weight: 800;
-  letter-spacing: -0.05rem;
+  letter-spacing: 0.05rem;
   margin: 1rem 0;
+  color: white;
+  font-weight: bold;
 }
 
 .headingXl {
@@ -12,17 +14,29 @@
   font-weight: 800;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
+  color: white;
+  font-weight: bold;
 }
 
 .headingLg {
   font-size: 1.5rem;
   line-height: 1.4;
   margin: 1rem 0;
+  color: white;
+  font-weight: bold;
 }
 
 .headingMd {
   font-size: 1.2rem;
   line-height: 1.5;
+  color: white;
+  font-weight: bold;
+}
+
+.subheading {
+	font-size: 1.2rem;
+	color: var(--secondary-color);
+	font-family: 'PT Mono', monospace;
 }
 
 .borderCircle {
@@ -49,4 +63,42 @@
 
 .lightText {
   color: #666;
+}
+
+.flex {
+    display: flex;
+}
+
+.jCenter {
+    justify-content: center;
+}
+
+.aCenter {
+    align-items: center;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flexCol {
+	flex-direction: column;
+}
+
+.heroSection {
+	width: 100%;
+    height: 90vh;
+    margin-bottom: 3rem;
+}
+
+.section {
+    height: 100%;
+    margin: 5rem 0;
+    margin-bottom: 50%;
+}
+
+.debug {
+	border: 1px solid red;
 }

@@ -1,0 +1,29 @@
+.hero {
+    height: 85vh;
+    position: relative;
+    margin-bottom: 40%;
+}
+
+.heroContainer {
+    color: white;
+    height: 100%;
+}
+
+.heroContainer > p:last-of-type {
+    color: grey;
+    font-weight: 300;
+}
+
+.heroContainer > p > span {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.iconContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 75vh;
+}

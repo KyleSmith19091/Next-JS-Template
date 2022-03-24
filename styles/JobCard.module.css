@@ -1,0 +1,68 @@
+.jobCard {
+    border: 2px solid var(--primary-color);
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
+    padding: 2rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.position {
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--text-color);
+    margin: 0 1em;
+    opacity: 30%;
+}
+
+.jobDescription {
+    color: var(--text-color);
+    opacity: 70%;
+    font-weight: 300;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+}
+
+.listItem > span {
+    margin-right: 1rem;
+}
+
+.tech {
+    display: grid;
+    grid-auto-flow: column;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    opacity: 30%;
+    margin-top: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .line {
+        margin-bottom: 1rem;
+    }
+
+    .jobDescription {
+        margin-top: 1rem;
+    }
+
+
+}

@@ -1,23 +1,67 @@
+:root {
+	--background-color: #12151F;
+	--primary-color: #371BB1;
+	--secondary-color: #05F4B7;
+    --tertiary-color: #1F2539;
+	--text-color: white;
+
+    --mono-font: 'PT Mono', monospace;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--background-color);
+  scroll-behavior: smooth;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    white-space: nowrap;
+    color: var(--color-text);
 }
 
-a:hover {
-  text-decoration: underline;
+a::before,
+a::after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
 }
 
-img {
-  max-width: 100%;
-  display: block;
+a::before {
+    content: '';
+    /* show by default */
+}
+
+a::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+a:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+}
+
+ul {
+    list-style: none;
+}
+
+strong {
+    font-weight: normal;
+    color: var(--secondary-color);
 }
 
 * {
